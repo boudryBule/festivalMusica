@@ -1,0 +1,25 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "Aprendiendo Gulp y SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boudryBule/festivalMusica.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp",
+    "web",
+    "desing"
+  ],
+  "author": "Juan Manuel Boudry León",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boudryBule/festivalMusica/issues"
+  },
+  "homepage": "https://github.com/boudryBule/festivalMusica#readme"
+}
