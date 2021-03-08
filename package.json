@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/boudryBule/festivalMusica/issues"
   },
-  "homepage": "https://github.com/boudryBule/festivalMusica#readme"
+  "homepage": "https://github.com/boudryBule/festivalMusica#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2"
+  }
 }
