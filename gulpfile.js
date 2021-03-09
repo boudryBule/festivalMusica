@@ -32,8 +32,9 @@
 // exports.tareas = series(css,javascript); //si en vez de llamarlo tareas lo llamas default, al poner gulp te lo ejecuta
 // exports.default = parallel(css,javascript); //con parallel lo ejecuta todo en paralelo
 
-const { series,src,dest } = require('gulp'); //la función src lo que hace es buscar los arhcivos de SASS
+const { series,src,dest, watch } = require('gulp'); //la función src lo que hace es buscar los arhcivos de SASS
                                             //la funcion destnos va a tomar la ruta en la que se va a guardar la versión compilada de esta hoja de estilos o de cualquier otra tarea ( imagenes, scripts)
+                                            //watch le decimos que archivos puede que tengan cambios y que si tienen cambios que ejecute una tarea
 const sass = require('gulp-dart-sass'); //como este solo tiene una función va sin llaves
 
 //función que compila SASS
@@ -58,5 +59,11 @@ function minificarcss() { //así podrías tener una función que te minificara e
 
 }
 
+function watchArchivos() {
+    watch('src/scss/app.scss', css); //le pasamos la ruta del archivo y la función que queremos que ejecute
+
+}
+
 exports.css = css;
-exports.minificarcss = minificarcss;
+exports.minificarcss = minificarcss;    
+exports.watchArchivos = watchArchivos;
